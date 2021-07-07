@@ -11,7 +11,7 @@ device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
 
 
 class NPregression(nn.Module):
-    def __init__(self, kind, dim_input, dim_output, ln=True, dim_hidden=128, num_heads=8):
+    def __init__(self, kind, dim_input, dim_output, dim_hidden=128, num_heads=8):
         super(NPRegression, self).__init__()
         self.kind = kind
         self.dim_input = dim_input
@@ -230,7 +230,7 @@ class NPregression(nn.Module):
 
     
 class NPclassification(nn.Module):
-    def __init__(self, kind, dim_input, dim_output, ln=True, dim_hidden=128, num_heads=8, dp_rate=0.0):
+    def __init__(self, kind, dim_input, dim_output, dim_hidden=128, num_heads=8, dp_rate=0.0):
         super(NPClassification, self).__init__()
         self.kind = kind
         self.dim_input = dim_input
