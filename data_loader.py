@@ -1,6 +1,5 @@
 # Following links are what we referred to for data generation
-#https://github.com/huaxiuyao/HSML/blob/master/data_generator.py
-#https://github.com/timchen0618/pytorch-leo/blob/master/data.py
+#https://github.com/deepmind/neural-processes
 
 import numpy as np
 import os
