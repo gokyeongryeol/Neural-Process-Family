@@ -27,3 +27,11 @@ Specifically, a linear classifier for certain class label (e.g. 1) is constructe
 
 See `main.py`, for the hyperparameter setting and the overall training process.
 
+Note that while ANP converges much faster than NP and better handles underfitting, its interpolation and extrapolation turns out to be wiggly.
+
+<img src='./plots/NP_1D_training.gif' height="256">, <img src='./plots/ANP_1D_training.gif' height="256">
+
+The prediction gets accurate as the number of context dataset increases.
+<img src='./plots/ANP_2D_training.gif' weight="512">
+
+
