@@ -1,6 +1,6 @@
 # Neural Process Family
 
-Pytorch implementation of neural process families (CNP, NP, ANP, Meta-Fun) on both regression and classification.
+Pytorch implementation of neural process families ([CNP](https://arxiv.org/pdf/1807.01613.pdf), [NP](https://arxiv.org/pdf/1807.01622.pdf), [ANP](https://arxiv.org/pdf/1901.05761.pdf), [Meta-Fun](https://arxiv.org/pdf/1912.02738.pdf)) on both regression and classification.
 
 ## How the studies have evolved
 
