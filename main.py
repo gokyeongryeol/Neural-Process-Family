@@ -112,7 +112,7 @@ def regression(task, kind):
 
     
     
-def evaluation(task, kind, NLL_tilt_w, lamb):
+def evaluation(task, kind):
     model = NPregression(kind=kind, dim_input=1, dim_output=1).to(device)
     model.load_state_dict(torch.load('models/'+task+kind+'/1300000.pt'), strict=False)
     model.eval()
@@ -126,7 +126,7 @@ def evaluation(task, kind, NLL_tilt_w, lamb):
     Tx = torch.tensor(Tx, dtype=torch.float)
     Ty = torch.tensor(Ty, dtype=torch.float)
         
-    y_dist, _, _, MSE = model(Cx.to(device), Cy.to(device), Tx.to(device), Ty.to(device), NLL_tilt_w=NLL_tilt_w, lamb=lamb)
+    y_dist, _, _, MSE = model(Cx.to(device), Cy.to(device), Tx.to(device), Ty.to(device))
     
     NLL_tensor = -y_dist.log_prob(Ty.to(device)).sum(-1).mean(-1)
     
