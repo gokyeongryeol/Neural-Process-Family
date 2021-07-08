@@ -22,7 +22,7 @@ Meta-Fun further bridges to the functional gradient descent that implictly relax
 See `data_loader.py` for preparing the dataset for 1D gaussian process regression and 2D image completion.
 
 See `model.py` for comparing how the models feedforward the set data. 
-Although Neural Process Family is devised to mainly deal with the regression problems, we also expand to classification problems using the linear classifier proposed in several meta-learning algorithms suchas as [VERSA](https://arxiv.org/pdf/1805.09921.pdf), [LEO](https://arxiv.org/pdf/1807.05960.pdf), [CNAP](https://arxiv.org/pdf/1906.07697.pdf).
+Although Neural Process Family is devised to mainly deal with the regression problems, we also expand to classification problems using the linear classifier proposed in several meta-learning algorithms such as [VERSA](https://arxiv.org/pdf/1805.09921.pdf), [LEO](https://arxiv.org/pdf/1807.05960.pdf), [CNAP](https://arxiv.org/pdf/1906.07697.pdf).
 Specifically, a linear classifier for certain class label (e.g. 1) is constructed by processing a subset of the context input {Cx | Cy = 1} of the label.
 
 See `main.py`, for the hyperparameter setting and the overall training process.
