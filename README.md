@@ -26,7 +26,7 @@ Although Neural Process Family is devised to mainly deal with the regression pro
 Specifically, a linear classifier for certain class label (e.g. 1) is constructed by processing a subset of the context input {Cx | Cy = 1} of the label.
 
 <p align="center">
-<img src='./plots/classification_prediction.gif' height="256">
+<img src='./plots/classification prediction.png' height="192">
 
 See `main.py`, for the hyperparameter setting and the overall training process.
 
@@ -39,6 +39,6 @@ While ANP converges much faster than NP and better handles underfitting, its int
 <img src='./plots/NP_1D_training.gif' height="256">, <img src='./plots/ANP_1D_training.gif' height="256">
 
 The prediction gets accurate as the number of context dataset increases.
-<img src='./plots/ANP_2D_training.gif' weight="512">
+<img src='./plots/ANP_2D_training.gif'>
 
 
