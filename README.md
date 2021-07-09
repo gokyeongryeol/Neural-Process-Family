@@ -25,10 +25,17 @@ See `model.py` for comparing how the models feedforward the set data.
 Although Neural Process Family is devised to mainly deal with the regression problems, we also expand to classification problems using the linear classifier proposed in several meta-learning algorithms such as [VERSA](https://arxiv.org/pdf/1805.09921.pdf), [LEO](https://arxiv.org/pdf/1807.05960.pdf), [CNAP](https://arxiv.org/pdf/1906.07697.pdf).
 Specifically, a linear classifier for certain class label (e.g. 1) is constructed by processing a subset of the context input {Cx | Cy = 1} of the label.
 
+<p align="center">
+<img src='./plots/classification_prediction.gif' height="256">
+
 See `main.py`, for the hyperparameter setting and the overall training process.
 
-Note that while ANP converges much faster than NP and better handles underfitting, its interpolation and extrapolation turns out to be wiggly.
+As a pilot study, the models are evaluated on Gaussian Process regression and CIFAR10 image completion. Followings are some qualitative analysis on performance.
+(For a detailed empirical comparison between the neural process families, refer to [paper](http://bayesiandeeplearning.org/2018/papers/92.pdf).)
 
+While ANP converges much faster than NP and better handles underfitting, its interpolation and extrapolation turns out to be wiggly.
+
+<p align="center">
 <img src='./plots/NP_1D_training.gif' height="256">, <img src='./plots/ANP_1D_training.gif' height="256">
 
 The prediction gets accurate as the number of context dataset increases.
